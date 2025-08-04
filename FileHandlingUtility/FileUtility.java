@@ -5,18 +5,31 @@ import java.util.Scanner;
 
 public class FileUtility {
 
-    private static final String FILE_NAME = "internship_task.txt";
+    private static final String FILE_NAME = "football_worldcup.txt";
 
     public static void writeToFile() {
         String content = """
-                CODTECH INTERNSHIP TASK - 1
-                FILE HANDLING UTILITY
-                
-                INSTRUCTIONS:
-                - CREATE A JAVA PROGRAM TO READ, WRITE, AND MODIFY TEXT FILES.
-                - DELIVERABLE: A SCRIPT DEMONSTRATING FILE OPERATIONS WITH CLEAR DOCUMENTATION.
-                
-                COMPLETION CERTIFICATE WILL BE ISSUED ON YOUR INTERNSHIP END DATE.
+                FIFA FOOTBALL WORLD CUP OVERVIEW
+
+                ABOUT:
+                The FIFA World Cup is the most prestigious football tournament in the world, held every 4 years.
+                It features national teams from across the globe competing for the ultimate prize in international football.
+
+                HISTORY:
+                - First held in 1930 in Uruguay.
+                - Brazil has won the most titles (5).
+                - The 2022 World Cup was held in Qatar and won by Argentina.
+
+                FORMAT:
+                - 32 teams compete in a month-long tournament.
+                - Group stage followed by knockout rounds.
+                - Final match determines the world champion.
+
+                FUN FACTS:
+                - The World Cup trophy is made of 18-karat gold.
+                - It is estimated that over 1 billion people watched the 2018 final.
+
+                ⚽ Stay tuned for the next edition of the World Cup!
                 """;
 
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
@@ -79,4 +92,3 @@ public class FileUtility {
         sc.close();
     }
 }
-
